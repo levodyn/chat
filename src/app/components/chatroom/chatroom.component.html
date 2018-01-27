@@ -1,0 +1,22 @@
+<div class="mainContent" #scrollMe >
+  <img class="top-right-image" src = "../../../assets/img/chat2.png" (click)="report()">    
+  <div class="userListWrapper">
+    <div class="userList">
+      <div *ngFor="let user of userRev">
+        <div class="userItem">
+            <span class="status {{status(user)}}"></span>
+            <span class="userName">
+              {{user.name}}
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feedWrapper" >
+    <chatfeed></chatfeed>
+  </div>
+</div>
+    
+<div class="chatFormWrapper">
+  <chat-input></chat-input>
+</div>

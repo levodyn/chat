@@ -1,0 +1,17 @@
+
+<div class="logincontainer">
+    <div class="loginCard">
+      <h2 class="heading">What will be your name!!</h2>
+        <input 
+          type="text" 
+          name="name" 
+          class="formInput"
+          [(ngModel)]="name"
+          maxlength="18" />
+        <button class="btn" 
+                id="btn-login" 
+                (click)="login()">
+                Start chatting
+        </button>
+    </div>
+  </div>

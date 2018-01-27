@@ -1,0 +1,16 @@
+<h1 routerLink="/">Chat</h1>
+<div *ngFor="let message of messages | async">
+  <div class="messagebox">
+    <div class="messageData">
+      <span class="sender">
+        {{ message.userName }}
+      </span>
+      <span class="timestamp">
+        {{ message.timeSent}}
+      </span>
+    </div>
+    <div class="messageContent">
+      {{ message.message }}
+    </div>
+  </div>
+</div>
